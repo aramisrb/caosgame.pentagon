@@ -15,7 +15,7 @@ function setup() {
 	for(let i=0;i<n;i++){
 		let angle=i*TWO_PI/n;
 		let v=p5.Vector.fromAngle(angle);
-		v.mult(width/2);
+		v.mult(width/4);
 		v.add(width/2,height/2);
 		points.push(v);
 	}
@@ -24,6 +24,7 @@ function setup() {
 }
 
 function reset(){
+  createCanvas(windowWidth, windowHeight);
 
 
 	current=createVector(random(width),random(height));
